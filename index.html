@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,9 @@
             <a href="#">Верхнее меню</a>
             <a href="#">Нижнее меню</a>
         </nav>
-        <h1>Moon</h1>
-        <ul>
+        <a href="#">
+            <img src="images/newlogo.png" alt="footer-logo" style="width: 256px;">
+        </a>        <ul>
             <li>
                 <a href="#">
                     <img src="images/profile.png" alt="Profile" style="width: 32px;">
@@ -26,19 +28,24 @@
             </li>
         </ul>
     </header>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://static.insales-cdn.com/r/JQkCSWoasd0/rs:fit:1920:0:1/q:100/plain/files/1/3389/22113597/original/Frame_248.png@webp" alt="slider-first-pic">
+                <figcaption>Увлажнение и уход - скидки 15%</figcaption>
+            </div>
+            <div class="slide">
+                <img src="https://static.insales-cdn.com/r/UWux2lAkUFg/rs:fit:1920:0:1/q:100/plain/files/1/2665/22112873/original/Frame_272__1_.jpg@webp" alt="slider-second-pic">
+            </div>
+        </div>
+        <button class="prev">←</button>
+        <button class="next">→</button>
+    </section>
     <main>
-        <section>
-            <figure>
-                <img src="images/slider1.jpg" alt="slider-first-pic">
-                <figcaption>Увлажнение и уход - скидки 15%</figcaption> 
-            </figure>
-        </section>
         <section>
             <div>
                 <article>
-                    <h2>
-                        ЕЖЕДНЕВНЫЙ УХОД ЗА КОЖЕЙ 
-                    </h2>
+                    <h2>ЕЖЕДНЕВНЫЙ УХОД ЗА КОЖЕЙ</h2>
                     <p>
                         Тонизирующее масло для тела питает энергией, улучшает эластичность 
                         и гладкость кожи. В составе обязательно присутствуют масла мяты, 
@@ -47,15 +54,14 @@
                         Ароматические эфирные масла благотворно влияют на самочувствие, дарят 
                         заряд бодрости и энергии.
                     </p>
+                    <button>Подробнее</button>
                 </article>
-                <img src="" alt="first-article-image">
+                <img src="https://avatars.mds.yandex.net/get-altay/1579247/2a0000016fefabaac6953945f66202babc06/XXL_height" alt="first-article-image">
             </div>
             <div>
-                <img src="" alt="second-article-image">
+                <img src="https://static.insales-cdn.com/r/JMh3sh-ppyU/rs:fit:704:0:1/q:100/plain/files/1/3770/21114554/original/Frame_291.jpg@webp" alt="second-article-image">
                 <article>
-                    <h2>
-                        РАСПАХНУТЫЙ ВЗГЛЯД 
-                    </h2>
+                    <h2>РАСПАХНУТЫЙ ВЗГЛЯД</h2>
                     <p>
                         Подарите вашим ресницам объём и выразительность одним движением. 
                         Тушь насыщена каяловыми пигментами, которые делают каждую ресничку 
@@ -63,13 +69,12 @@
                         ресницы, а клиновидный кончик достает до труднодоступных ресничек. 
                         Угольно-черные ресницы — отличное дополнение к дымчатому макияжу глаз.
                     </p>
+                    <button>Подробнее</button>
                 </article>                
             </div>
             <div>
                 <article>
-                    <h2>
-                        ПОДБИРАЕМ ПРАВИЛЬНЫЙ ТОН 
-                    </h2>
+                    <h2>ПОДБИРАЕМ ПРАВИЛЬНЫЙ ТОН</h2>
                     <p>
                         Придайте коже сияющий вид с невесомым тональным кремом. 
                         Крем выравнивает текстуру кожи, скрывает поры и мелкие 
@@ -78,24 +83,32 @@
                         сильной концентрации эмолентов, кожа становится упругой и мягкой. 
                         Пигмент из прусских синих жемчужин дарит коже эффект мягкого фокуса.
                     </p>
+                    <button>Подробнее</button>
                 </article>
-                <img src="" alt="third-article-image">                
+                <img src="https://expertcosmo.ru/wp-content/uploads/2023/03/Easy-Ways-to-Improve-Your-Skin-1-scaled-1-2048x1367.jpg" alt="third-article-image">                
             </div>
         </section>
         <aside>
             <h3>Полезные советы по уходу за кожей</h3>
             <ul>
-                <li><a href="#">Как выбрать правильное масло для тела</a></li>
-                <li><a href="#">Преимущества натуральных компонентов</a></li>
-                <li><a href="#">Топ-5 лучших средств для увлажнения кожи</a></li>
+                <li>
+                    <a href="#">Как выбрать правильное масло для тела</a>
+                </li>
+                <li>
+                    <a href="#">Преимущества натуральных компонентов</a>
+                </li>
+                <li>
+                    <a href="#">Топ-5 лучших средств для увлажнения кожи</a>
+                </li>
             </ul>
             <p>Реклама: Купите наши новые увлажняющие кремы со скидкой 20%!</p>
         </aside>
     </main>
+
     <footer>
         <ul>
             <li>
-                <a href="#"> +7(800) 800-80-80</a>
+                <a href="#">+7(800) 800-80-80</a>
                 <p>г. Москва, 1-я Тверская-Ямская улица, дом 21</p>
                 <small>&copy; Copyright 2024, Moon Corporation</small>
             </li>
@@ -108,12 +121,12 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="images/tg.png" alt="Telegramm" style="width: 24px;">
+                            <img src="images/tg.png" alt="Telegram" style="width: 24px;">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/vk.png" alt="BKontakte" style="width: 24px;">
+                            <img src="images/vk.png" alt="VKontakte" style="width: 24px;">
                         </a>
                     </li>
                     <li>
@@ -125,5 +138,6 @@
             </li>
         </ul>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,194 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #222;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+}
+header h1 {
+  font-size: 44px;
+  color: #000;
+}
+header nav a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+header nav a:hover {
+  color: #333;
+  border-bottom: 1px solid #000;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  margin-left: 15px;
+}
+header ul li a img {
+  width: 32px;
+  transition: opacity 0.3s;
+}
+header ul li a img:hover {
+  opacity: 0.7;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider .slides .slide {
+  min-width: 100%;
+  position: relative;
+  text-align: center;
+}
+.slider .slides .slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.slider .slides .slide figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -300%);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.slider .prev {
+  left: 10px;
+}
+.slider .next {
+  right: 10px;
+}
+
+main section div {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+main section div article {
+  max-width: 400px;
+  padding: 0 10px;
+}
+main section div article h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+main section div article p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+main section div article button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+main section div article button:hover {
+  background-color: #333;
+}
+main section div img {
+  max-width: 25%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+aside {
+  max-width: 250px;
+}
+aside h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+aside ul li {
+  margin-bottom: 10px;
+}
+aside ul li a {
+  text-decoration: none;
+  color: #000;
+}
+aside ul li a:hover {
+  color: #333;
+}
+aside p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+footer ul li {
+  margin-right: 40px;
+}
+footer ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+footer ul li a img {
+  width: 24px;
+}
+footer ul li p {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+footer ul li small {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
+}/*# sourceMappingURL=style.css.map */
