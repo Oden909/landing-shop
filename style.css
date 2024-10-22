@@ -12,6 +12,7 @@ header {
   align-items: center;
   padding: 10px 50px;
   background-color: #fff;
+  flex-wrap: wrap;
 }
 header h1 {
   font-size: 44px;
@@ -97,6 +98,7 @@ main section div {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 main section div article {
@@ -191,4 +193,111 @@ footer ul li small {
   display: block;
   margin-top: 10px;
   color: #aaa;
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    display: none;
+  }
+  .slider .slides .slide figcaption {
+    transform: translate(-10%, -300%);
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .slider .slides .slide figcaption {
+    transform: translate(-40%, -120%);
+    font-size: 16px;
+    top: 50%;
+    left: 60%;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  footer ul li a {
+    font-size: 12px;
+  }
+  footer ul li a img {
+    width: 20px;
+  }
+  footer ul li p {
+    font-size: 10px;
+  }
+  footer ul li small {
+    font-size: 10px;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    padding: 10px;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin-bottom: 15px;
+  }
+  footer ul li a {
+    font-size: 10px;
+  }
+  footer ul li a img {
+    width: 18px;
+  }
+  footer ul li p {
+    font-size: 8px;
+  }
+  footer ul li small {
+    font-size: 8px;
+  }
+  .slider .slides .slide figcaption {
+    transform: translate(-20%, -120%);
+    font-size: 8px;
+    top: 50%;
+    left: 50%;
+    padding: 2px;
+  }
+  header ul {
+    display: none;
+  }
+  header {
+    padding: 10px 20px;
+  }
+  header h1 {
+    font-size: 32px;
+  }
+  header nav a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  main section div img {
+    display: none;
+  }
+  main section div article {
+    text-align: center;
+  }
+  main section div article h2 {
+    font-size: 18px;
+  }
+  main section div article p {
+    font-size: 12px;
+  }
+  main section div article button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
