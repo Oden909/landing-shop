@@ -6,7 +6,7 @@
     <title>Moon Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-theme">
     <header>
         <nav>
             <a href="#">Каталог</a>
@@ -25,6 +25,11 @@
                 <a href="#">
                     <img src="images/cart.png" alt="Cart" style="width: 32px;"> 
                 </a>             
+            </li>
+            <li>
+                <a href="#">
+                    <img id="theme-toggle" src="images/toogle-off.png" alt="Toogle" style="width: 32px;"> 
+                </a> 
             </li>
         </ul>
     </header>
@@ -87,6 +92,47 @@
                 </article>
                 <img src="https://expertcosmo.ru/wp-content/uploads/2023/03/Easy-Ways-to-Improve-Your-Skin-1-scaled-1-2048x1367.jpg" alt="third-article-image">                
             </div>
+        </section>
+        <section class="video-section">
+            <h2>Как ухаживать за своей кожей</h2>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/xZRsET_MUEg?si=Viq8k8rks_gqj5rd" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section class="sale-section">
+            <h2>Скидки дня</h2>
+            <div class="sale-products">
+              <div class="product">
+                <img src="images/product1.jpg" alt="Товар 1">
+                <p>Товар 1 - 18% скидка!</p>
+              </div>
+              <div class="product">
+                <img src="images/product2.jpg" alt="Товар 2">
+                <p>Товар 2 - 23% скидка!</p>
+              </div>
+              <div class="product">
+                <img src="images/product3.jpg" alt="Товар 3">
+                <p>Товар 3 - 12% скидка!</p>
+              </div>
+              <div class="product">
+                <img src="images/product4.jpg" alt="Товар 4">
+                <p>Товар 4 - 25% скидка!</p>
+              </div>
+              <div class="product">
+                <img src="images/product5.jpg" alt="Товар 5">
+                <p>Товар 5 - 30% скидка!</p>
+              </div>
+              <div class="product">
+                <img src="images/product6.jpg" alt="Товар 6">
+                <p>Товар 6 - 45% скидка!</p>
+              </div>
+            </div>
+            <p>До конца акции осталось: <span id="timer"></span></p>
         </section>
         <aside>
             <h3>Полезные советы по уходу за кожей</h3>

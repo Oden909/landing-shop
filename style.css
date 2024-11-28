@@ -6,6 +6,32 @@ body {
   padding: 0;
 }
 
+body.light-theme {
+  background-color: #ffffff;
+}
+
+body.dark-theme {
+  background-color: #333;
+  color: #ffffff;
+}
+body.dark-theme main section button {
+  background-color: #fff;
+  color: #222;
+}
+body.dark-theme main section button:hover {
+  background-color: #999;
+}
+body.dark-theme .video-section {
+  background-color: #fff;
+  color: #222;
+}
+body.dark-theme .sale-section #timer {
+  color: #fff;
+}
+body.dark-theme .sale-section .sale-products .product p {
+  color: #fff;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -133,30 +159,88 @@ main section div img {
      object-fit: cover;
 }
 
+.video-section {
+  width: 100%;
+  background-color: #999;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
 aside {
   max-width: 250px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 aside h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  color: #000;
 }
 aside ul {
   list-style: none;
   padding: 0;
 }
 aside ul li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 aside ul li a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 aside ul li a:hover {
   color: #333;
 }
 aside p {
   font-size: 14px;
+  color: #222;
   margin-top: 20px;
+  background-color: #fde8a2;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sale-section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sale-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.sale-section .sale-products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.sale-section .sale-products .product {
+  max-width: 200px;
+  text-align: center;
+}
+.sale-section .sale-products .product img {
+  max-width: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+.sale-section .sale-products .product p {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.sale-section #timer {
+  font-size: 18px;
+  color: #000;
 }
 
 footer {
